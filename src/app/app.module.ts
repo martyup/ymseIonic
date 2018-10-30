@@ -13,6 +13,7 @@ import { HelsePage } from '../pages/helse/helse';
 import { KostPage } from '../pages/kost/kost';
 import { KalenderPage } from '../pages/kalender/kalender';
 import { FaqPage } from '../pages/faq/faq';
+import { ListePage } from '../pages/liste/liste';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -30,7 +31,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelsePage,
     KostPage,
     KalenderPage,
-    FaqPage
+    FaqPage,
+    ListePage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelsePage,
     KostPage,
     KalenderPage,
-    FaqPage
+    FaqPage,
+    ListePage
   ],
   providers: [
     StatusBar,

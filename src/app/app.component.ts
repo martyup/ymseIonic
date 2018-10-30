@@ -10,6 +10,7 @@ import { HelsePage } from '../pages/helse/helse';
 import { KostPage } from '../pages/kost/kost';
 import { KalenderPage } from '../pages/kalender/kalender';
 import { FaqPage } from '../pages/faq/faq';
+import { ListePage } from '../pages/liste/liste';
 
 
 @Component({
