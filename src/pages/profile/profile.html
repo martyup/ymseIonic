@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title  align="center">
+      Profil
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select [(ngModel)]="gender">
+        <ion-option value="f">Female</ion-option>
+        <ion-option value="m">Male</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Type of MS</ion-label>
+      <ion-select [(ngModel)]="gaming" interface="popover"  [selectOptions]="musicAlertOpts">
+        <ion-option value="rrms">Relapsing-Remitting MS</ion-option>
+        <ion-option value="ppms">Primary Progressive MS</ion-option>
+        <ion-option value="spms">Secondary Progressive MS</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Notifications</ion-label>
+      <ion-select [(ngModel)]="notifications" interface="action-sheet">
+        <ion-option value="enable">Enable</ion-option>
+        <ion-option value="mute">Mute</ion-option>
+        <ion-option value="mute_week">Mute for a week</ion-option>
+        <ion-option value="mute_year" (ionSelect)="notificationSelect($event)">Mute for a year</ion-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
