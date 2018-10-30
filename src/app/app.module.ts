@@ -17,7 +17,6 @@ import { FaqPage } from '../pages/faq/faq';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { Calendar } from '@ionic-native/calendar';
 
 @NgModule({
   declarations: [
@@ -53,7 +52,6 @@ import { Calendar } from '@ionic-native/calendar';
   ],
   providers: [
     StatusBar,
-    Calendar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
