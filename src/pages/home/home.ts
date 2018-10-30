@@ -7,7 +7,6 @@ import { HelsePage } from '../helse/helse';
 import { KostPage } from '../kost/kost';
 import { KalenderPage } from '../kalender/kalender';
 import { FaqPage } from '../faq/faq';
-import { ListePage } from '../liste/liste';
 
 @Component({
   selector: 'page-home',
@@ -35,9 +34,6 @@ export class HomePage {
   }
   tilFaq(){
     this.navCtrl.push(FaqPage);
-  }
-  tilListe(){
-    this.navCtrl.push(ListePage);
   }
 
 }
